@@ -1,0 +1,9 @@
+1) Create an LKE cluster with six 2GB nodes.
+2) Run `install-cert-manager.sh`
+3) Apply the `setup.yaml` manifest with `kubectl apply -f setup.yaml`. This will install the operator, as well as a cert-manager ClusterIssuer.
+4) Apply the `deploy.yaml` manifest with `kubectl apply -f deploy.yaml`. This will deploy a PXC CR in the default namespace.
+
+Observe as the PXC quickly enters Error status with message:
+  'Error: pxc upgrade error: can''t start/continue ''SmartUpdate'': waiting for all replicas are ready'
+
+Also note that the HAproxy pods are created and terminated multiple times.
