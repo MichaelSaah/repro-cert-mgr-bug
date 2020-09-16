@@ -7,3 +7,5 @@ Observe as the PXC quickly enters Error status with message:
   'Error: pxc upgrade error: can''t start/continue ''SmartUpdate'': waiting for all replicas are ready'
 
 Also note that the HAproxy pods are created and terminated multiple times.
+
+To re-run the test, simply `kubectl delete -f deploy.yaml`, and then delete the ssl secrets generated in the default namespace by cert-manager.
