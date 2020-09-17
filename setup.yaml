@@ -318,7 +318,7 @@ spec:
       serviceAccountName: percona-xtradb-cluster-operator
       containers:
         - name: percona-xtradb-cluster-operator
-          image: perconalab/percona-xtradb-cluster-operator:cert-vault
+          image: perconalab/percona-xtradb-cluster-operator:lin-master
           ports:
           - containerPort: 60000
             name: metrics

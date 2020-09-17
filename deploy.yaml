@@ -120,7 +120,7 @@ spec:
   haproxy:
     enabled: true
     size: 3
-    image: percona/percona-xtradb-cluster-operator:1.5.0-haproxy
+    image: perconalab/percona-xtradb-cluster-operator:master-haproxy
 #    imagePullPolicy: Always
 #    schedulerName: mycustom-scheduler
 #    configuration: |
